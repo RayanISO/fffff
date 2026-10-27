@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="100%" height="100%">
+  <defs>
+    <!-- Cake Stand Gradients -->
+    <linearGradient id="standGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fce7f3" />
+      <stop offset="30%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#fbcfe8" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <linearGradient id="standBaseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbcfe8" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <!-- Cake Frosting Gradients -->
+    <linearGradient id="frostingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="20%" stop-color="#fbcfe8" />
+      <stop offset="50%" stop-color="#fff1f7" />
+      <stop offset="80%" stop-color="#fbcfe8" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="frostingTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#fff0f6" />
+      <stop offset="100%" stop-color="#fbcfe8" />
+    </linearGradient>
+
+    <linearGradient id="creamSwirl" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#fdf2f8" />
+      <stop offset="100%" stop-color="#fbcfe8" />
+    </linearGradient>
+
+    <!-- Strawberry Gradients -->
+    <radialGradient id="strawberryGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ff6b8b" />
+      <stop offset="40%" stop-color="#ef4444" />
+      <stop offset="85%" stop-color="#b91c1c" />
+      <stop offset="100%" stop-color="#881337" />
+    </radialGradient>
+
+    <linearGradient id="strawberryLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="60%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+
+    <!-- Candle Sticks Gradients -->
+    <linearGradient id="candlePinkSpiral" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#fff1f2" />
+      <stop offset="70%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+
+    <!-- Gold Pearl Gradient -->
+    <radialGradient id="goldPearl" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#fde68a" />
+      <stop offset="85%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </radialGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="cakeShadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#08020f" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow behind Cake -->
+  <circle cx="250" cy="370" r="180" fill="#ec4899" opacity="0.22" />
+  <circle cx="250" cy="260" r="120" fill="#fbbf24" opacity="0.25" />
+
+  <!-- CAKE STAND -->
+  <g filter="url(#cakeShadow)">
+    <!-- Stand Base shadow on table -->
+    <ellipse cx="250" cy="635" rx="145" ry="18" fill="#090314" opacity="0.6" />
+    
+    <!-- Base Foot -->
+    <path d="M175,630 C175,615 210,612 250,612 C290,612 325,615 325,630 C325,638 290,642 250,642 C210,642 175,638 175,630 Z" fill="url(#standBaseGrad)" />
+    
+    <!-- Stand Stem -->
+    <path d="M236,545 L232,615 C232,618 268,618 268,615 L264,545 Z" fill="url(#standBaseGrad)" />
+    
+    <!-- Stand Stem Collar Highlight -->
+    <ellipse cx="250" cy="550" rx="26" ry="6" fill="#ffffff" opacity="0.7" />
+    
+    <!-- Plate Underside Shadow -->
+    <ellipse cx="250" cy="548" rx="215" ry="22" fill="#3b072b" opacity="0.45" />
+    
+    <!-- Plate Edge & Rim (Scalloped Pedestal Plate) -->
+    <ellipse cx="250" cy="542" rx="215" ry="24" fill="url(#standGrad)" />
+    <ellipse cx="250" cy="538" rx="208" ry="20" fill="#fff5f9" />
+    
+    <!-- Plate Pearls Trim -->
+    <g fill="url(#goldPearl)">
+      <circle cx="50" cy="542" r="4" /><circle cx="75" cy="549" r="4" /><circle cx="105" cy="555" r="4" />
+      <circle cx="140" cy="560" r="4" /><circle cx="180" cy="562" r="4" /><circle cx="220" cy="563" r="4" />
+      <circle cx="250" cy="563" r="4.5" /><circle cx="280" cy="563" r="4" /><circle cx="320" cy="562" r="4" />
+      <circle cx="360" cy="560" r="4" /><circle cx="395" cy="555" r="4" /><circle cx="425" cy="549" r="4" />
+      <circle cx="450" cy="542" r="4" />
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM TIER ================= -->
+  <g filter="url(#cakeShadow)">
+    <!-- Bottom Tier Body (Width: 340, Height: 120, from Y=410 to Y=530) -->
+    <path d="M80,410 L80,510 C80,545 420,545 420,510 L420,410 Z" fill="url(#frostingGrad)" />
+    
+    <!-- Bottom Tier Top Surface -->
+    <ellipse cx="250" cy="410" rx="170" ry="28" fill="url(#frostingTop)" />
+
+    <!-- Bottom Tier Royal Icing Swags / Drapery -->
+    <path d="M88,435 Q125,480 162,438 Q199,480 236,438 Q273,480 310,438 Q347,480 384,438 Q406,465 416,435" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.95" />
+    <path d="M94,443 Q125,483 156,446 Q199,483 236,446 Q273,483 310,446 Q347,483 378,443" fill="none" stroke="#fbcfe8" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+
+    <!-- Delicate Hanging Pearl Beads under Swags -->
+    <g fill="url(#goldPearl)">
+      <circle cx="125" cy="475" r="3" /><circle cx="199" cy="475" r="3" /><circle cx="273" cy="475" r="3" /><circle cx="347" cy="475" r="3" />
+    </g>
+
+    <!-- Bottom Tier Heart Fondant Medallions -->
+    <!-- Heart 1 -->
+    <path d="M125,452 C125,446 116,443 113,448 C110,443 101,446 101,452 C101,460 113,467 113,467 C113,467 125,460 125,452 Z" fill="#fff0f7" stroke="#f472b6" stroke-width="1.5" />
+    <!-- Heart 2 (Center) -->
+    <path d="M256,456 C256,449 245,445 241,452 C237,445 226,449 226,456 C226,466 241,475 241,475 C241,475 256,466 256,456 Z" fill="#ffffff" stroke="#f472b6" stroke-width="1.8" />
+    <!-- Heart 3 -->
+    <path d="M381,452 C381,446 372,443 369,448 C366,443 357,446 357,452 C357,460 369,467 369,467 C369,467 381,460 381,452 Z" fill="#fff0f7" stroke="#f472b6" stroke-width="1.5" />
+
+    <!-- Bottom Tier Bottom Piping Shell Border -->
+    <g fill="url(#creamSwirl)">
+      <ellipse cx="88" cy="516" rx="10" ry="7" /><ellipse cx="106" cy="522" rx="10" ry="7" /><ellipse cx="125" cy="527" rx="10" ry="7" />
+      <ellipse cx="146" cy="531" rx="10" ry="7" /><ellipse cx="168" cy="534" rx="10" ry="7" /><ellipse cx="191" cy="537" rx="10" ry="7" />
+      <ellipse cx="215" cy="539" rx="10" ry="7" /><ellipse cx="238" cy="540" rx="10" ry="7" /><ellipse cx="262" cy="540" rx="10" ry="7" />
+      <ellipse cx="285" cy="539" rx="10" ry="7" /><ellipse cx="309" cy="537" rx="10" ry="7" /><ellipse cx="332" cy="534" rx="10" ry="7" />
+      <ellipse cx="354" cy="531" rx="10" ry="7" /><ellipse cx="375" cy="527" rx="10" ry="7" /><ellipse cx="394" cy="522" rx="10" ry="7" />
+      <ellipse cx="412" cy="516" rx="10" ry="7" />
+    </g>
+  </g>
+
+  <!-- ================= TOP TIER ================= -->
+  <g filter="url(#cakeShadow)">
+    <!-- Top Tier Body (Width: 250, Height: 105, from Y=290 to Y=395) -->
+    <path d="M125,290 L125,385 C125,415 375,415 375,385 L375,290 Z" fill="url(#frostingGrad)" />
+    
+    <!-- Top Tier Top Surface -->
+    <ellipse cx="250" cy="290" rx="125" ry="22" fill="url(#frostingTop)" />
+
+    <!-- Top Tier Royal Icing Swags -->
+    <path d="M132,310 Q162,348 192,314 Q222,348 252,314 Q282,348 312,314 Q342,348 368,310" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" opacity="0.95" />
+    
+    <!-- Sweet Ribbon Bows on Top Tier -->
+    <g fill="#f472b6" stroke="#ffffff" stroke-width="1">
+      <circle cx="192" cy="316" r="3.5" /><circle cx="252" cy="316" r="3.5" /><circle cx="312" cy="316" r="3.5" />
+    </g>
+    <!-- Center Big Bow -->
+    <path d="M252,335 C244,328 238,336 248,340 C238,344 244,352 252,345 C260,352 266,344 256,340 C266,336 260,328 252,335 Z" fill="#f472b6" stroke="#fff0f7" stroke-width="1.2" />
+    <path d="M250,342 L244,358 M254,342 L260,358" stroke="#f472b6" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Top Tier Fondant Hearts -->
+    <path d="M197,338 C197,333 189,330 186,335 C183,330 175,333 175,338 C175,345 186,352 186,352 C186,352 197,345 197,338 Z" fill="#ffffff" stroke="#f472b6" stroke-width="1.4" />
+    <path d="M325,338 C325,333 317,330 314,335 C311,330 303,333 303,338 C303,345 314,352 314,352 C314,352 325,345 325,338 Z" fill="#ffffff" stroke="#f472b6" stroke-width="1.4" />
+
+    <!-- Top Tier Border Whipped Cream Rosettes -->
+    <g fill="url(#creamSwirl)">
+      <ellipse cx="132" cy="390" rx="9" ry="6.5" /><ellipse cx="150" cy="395" rx="9" ry="6.5" /><ellipse cx="170" cy="400" rx="9" ry="6.5" />
+      <ellipse cx="192" cy="404" rx="9" ry="6.5" /><ellipse cx="215" cy="406" rx="9" ry="6.5" /><ellipse cx="238" cy="407" rx="9" ry="6.5" />
+      <ellipse cx="262" cy="407" rx="9" ry="6.5" /><ellipse cx="285" cy="406" rx="9" ry="6.5" /><ellipse cx="308" cy="404" rx="9" ry="6.5" />
+      <ellipse cx="330" cy="400" rx="9" ry="6.5" /><ellipse cx="350" cy="395" rx="9" ry="6.5" /><ellipse cx="368" cy="390" rx="9" ry="6.5" />
+    </g>
+  </g>
+
+  <!-- ================= DELICIOUS STRAWBERRIES & FLOWERS ================= -->
+  <!-- Left Strawberry on Bottom Tier -->
+  <g transform="translate(100, 395) rotate(-14) scale(0.85)">
+    <path d="M20,0 C32,0 40,16 35,32 C30,46 20,54 20,54 C20,54 10,46 5,32 C0,16 8,0 20,0 Z" fill="url(#strawberryGrad)" />
+    <circle cx="14" cy="18" r="1" fill="#fef08a" /><circle cx="25" cy="16" r="1" fill="#fef08a" />
+    <circle cx="18" cy="28" r="1" fill="#fef08a" /><circle cx="28" cy="30" r="1" fill="#fef08a" />
+    <path d="M20,2 L14,-8 L18,-2 L20,-10 L22,-2 L26,-8 L20,2 Z" fill="url(#strawberryLeaf)" />
+  </g>
+
+  <!-- Right Strawberry on Bottom Tier -->
+  <g transform="translate(365, 395) rotate(16) scale(0.85)">
+    <path d="M20,0 C32,0 40,16 35,32 C30,46 20,54 20,54 C20,54 10,46 5,32 C0,16 8,0 20,0 Z" fill="url(#strawberryGrad)" />
+    <circle cx="14" cy="18" r="1" fill="#fef08a" /><circle cx="25" cy="16" r="1" fill="#fef08a" />
+    <circle cx="18" cy="28" r="1" fill="#fef08a" /><circle cx="28" cy="30" r="1" fill="#fef08a" />
+    <path d="M20,2 L14,-8 L18,-2 L20,-10 L22,-2 L26,-8 L20,2 Z" fill="url(#strawberryLeaf)" />
+  </g>
+
+  <!-- Front Strawberries on Top Tier -->
+  <g transform="translate(150, 275) rotate(-10) scale(0.78)">
+    <path d="M20,0 C32,0 40,16 35,32 C30,46 20,54 20,54 C20,54 10,46 5,32 C0,16 8,0 20,0 Z" fill="url(#strawberryGrad)" />
+    <circle cx="16" cy="20" r="1" fill="#fef08a" /><circle cx="25" cy="24" r="1" fill="#fef08a" />
+    <path d="M20,2 L14,-8 L18,-2 L20,-10 L22,-2 L26,-8 L20,2 Z" fill="url(#strawberryLeaf)" />
+  </g>
+
+  <g transform="translate(315, 275) rotate(12) scale(0.78)">
+    <path d="M20,0 C32,0 40,16 35,32 C30,46 20,54 20,54 C20,54 10,46 5,32 C0,16 8,0 20,0 Z" fill="url(#strawberryGrad)" />
+    <circle cx="16" cy="20" r="1" fill="#fef08a" /><circle cx="25" cy="24" r="1" fill="#fef08a" />
+    <path d="M20,2 L14,-8 L18,-2 L20,-10 L22,-2 L26,-8 L20,2 Z" fill="url(#strawberryLeaf)" />
+  </g>
+
+  <!-- Big Whipped Cream Mound on Top Center -->
+  <g fill="url(#creamSwirl)">
+    <path d="M210,290 C200,265 230,250 250,252 C270,250 300,265 290,290 C280,300 220,300 210,290 Z" />
+    <path d="M230,270 C240,248 260,248 270,270 C265,278 235,278 230,270 Z" fill="#ffffff" />
+    <ellipse cx="250" cy="250" rx="16" ry="8" fill="#ffffff" />
+  </g>
+
+  <!-- Center Juicy Strawberry on Cream Peak -->
+  <g transform="translate(233, 230) scale(0.85)">
+    <path d="M20,0 C32,0 40,16 35,32 C30,46 20,54 20,54 C20,54 10,46 5,32 C0,16 8,0 20,0 Z" fill="url(#strawberryGrad)" />
+    <circle cx="14" cy="16" r="1" fill="#fef08a" /><circle cx="24" cy="14" r="1" fill="#fef08a" />
+    <circle cx="18" cy="26" r="1" fill="#fef08a" /><circle cx="28" cy="28" r="1" fill="#fef08a" />
+    <path d="M20,2 L14,-8 L18,-2 L20,-10 L22,-2 L26,-8 L20,2 Z" fill="url(#strawberryLeaf)" />
+  </g>
+
+  <!-- Sugar Blossom Flowers scattered -->
+  <g fill="#ffffff">
+    <circle cx="135" cy="285" r="5" /><circle cx="142" cy="288" r="5" /><circle cx="138" cy="295" r="5" /><circle cx="130" cy="295" r="5" /><circle cx="126" cy="288" r="5" />
+    <circle cx="134" cy="290" r="2.5" fill="#fbbf24" />
+    <circle cx="365" cy="285" r="5" /><circle cx="372" cy="288" r="5" /><circle cx="368" cy="295" r="5" /><circle cx="360" cy="295" r="5" /><circle cx="356" cy="288" r="5" />
+    <circle cx="364" cy="290" r="2.5" fill="#fbbf24" />
+  </g>
+
+  <!-- ================= 5 ELEGANT SPIRAL CANDLE STICKS ================= -->
+  <!-- Candle 1: X=165, BaseY=285, TopY=195, WickTopY=185 -->
+  <g id="candle-stick-1">
+    <rect x="161" y="195" width="8" height="90" rx="3" fill="url(#candlePinkSpiral)" />
+    <path d="M161,208 L169,214 M161,224 L169,230 M161,240 L169,246 M161,256 L169,262 M161,272 L169,278" stroke="#ec4899" stroke-width="2.5" />
+    <line x1="165" y1="195" x2="165" y2="185" stroke="#290f1d" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Candle 2: X=207, BaseY=275, TopY=180, WickTopY=170 -->
+  <g id="candle-stick-2">
+    <rect x="203" y="180" width="8" height="95" rx="3" fill="url(#candlePinkSpiral)" />
+    <path d="M203,193 L211,199 M203,209 L211,215 M203,225 L211,231 M203,241 L211,247 M203,257 L211,263" stroke="#ec4899" stroke-width="2.5" />
+    <line x1="207" y1="180" x2="207" y2="170" stroke="#290f1d" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Candle 3 (Center): X=250, BaseY=245, TopY=165, WickTopY=155 -->
+  <g id="candle-stick-3">
+    <rect x="246" y="165" width="8" height="80" rx="3" fill="url(#candlePinkSpiral)" />
+    <path d="M246,178 L254,184 M246,194 L254,200 M246,210 L254,216 M246,226 L254,232" stroke="#ec4899" stroke-width="2.5" />
+    <line x1="250" y1="165" x2="250" y2="155" stroke="#290f1d" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Candle 4: X=293, BaseY=275, TopY=180, WickTopY=170 -->
+  <g id="candle-stick-4">
+    <rect x="289" y="180" width="8" height="95" rx="3" fill="url(#candlePinkSpiral)" />
+    <path d="M289,193 L297,199 M289,209 L297,215 M289,225 L297,231 M289,241 L297,247 M289,257 L297,263" stroke="#ec4899" stroke-width="2.5" />
+    <line x1="293" y1="180" x2="293" y2="170" stroke="#290f1d" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Candle 5: X=335, BaseY=285, TopY=195, WickTopY=185 -->
+  <g id="candle-stick-5">
+    <rect x="331" y="195" width="8" height="90" rx="3" fill="url(#candlePinkSpiral)" />
+    <path d="M331,208 L339,214 M331,224 L339,230 M331,240 L339,246 M331,256 L339,262 M331,272 L339,278" stroke="#ec4899" stroke-width="2.5" />
+    <line x1="335" y1="195" x2="335" y2="185" stroke="#290f1d" stroke-width="2" stroke-linecap="round" />
+  </g>
+</svg>
